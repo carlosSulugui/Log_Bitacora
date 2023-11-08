@@ -1,0 +1,26 @@
+@{
+    ViewData["Title"] = "Autenticacion";
+}
+
+
+<div class="card">
+    <div class="card-header">
+        <h2>@ViewData["Title"]</h2>
+    </div>
+    <div class="card-body">
+        <form>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="user" placeholder="Usuario o correo electronio">
+                <label for="user">Usuario o correo electronio</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="password" placeholder="Contraseña">
+                <label for="password">Contraseña</label>
+            </div>
+            <button class="btn btn-dark">Iniciar secion</button>
+        </form>
+    </div>
+    <div class="card-footer">
+        <p>si aun no tiene una cuenta reegistrate <samp >aqui</samp></p>
+    </div>
+</div>

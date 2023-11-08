@@ -1,0 +1,73 @@
+@model UserViewModel;
+
+@{
+    ViewData["Title"] = "Agregar nuevo usuario ";
+}
+
+
+
+
+    <div class="card">
+        <div class="card-header text-center"><h2>@ViewData["Title"]</h2></div>
+        <div class="card-body">
+            <form>
+                <div class="mb-3">
+                  <label for="formFileLg" class="form-label">Agrgar Foto</label>
+                  <input class="form-control form-control-lg" id="formFileLg" type="file">
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-4  form-floating mb-3 ">
+                        <input type="text" class="form-control" id="first-name" placeholder="Primer nombre">
+                        <label for="first-name">Primer nombre</label>
+                    </div>
+                    <div class="col-6 col-sm-4 form-floating mb-3">
+                        <input type="text" class="form-control" id="second-name" placeholder="Segundo nombre">
+                        <label for="second-name">Segundo nombre</label>
+                    </div>
+                    <div class="col-6 col-sm-4 form-floating mb-3">
+                        <input type="text" class="form-control" id="tree-name" placeholder="Tercer nombre">
+                        <label for="tree-name">Tercer nombre</label>
+                    </div>
+                </div>
+                <di class="row">
+                    <div class="form-floating mb-3 col">
+                        <input type="email" class="form-control" id="first-lastname" placeholder="Primer apellido">
+                        <label for="first-lastname">Primer apellido</label>
+                    </div>
+                    <div class="form-floating mb-3 col-6 col">
+                        <input type="text" class="form-control" id="second-lastname" placeholder="Segundo apellido">
+                        <label for="second-lastname">Segundo apellido</label>
+                    </div>
+                </di>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="email" placeholder="Correo electronico">
+                    <label for="email">Correo electronico</label>
+                </div>
+                
+                <div class="row">
+                    <div class="col form-floating mb-3">
+                        <input type="password" class="form-control" id="password" placeholder="Contraseña">
+                        <label for="password">Contraseña</label>
+                    </div>
+                    <div class="col form-floating mb-3">
+                        <input type="password" class="form-control" id="confirmPassword" placeholder="Confirmar contraseña">
+                        <label for="confirmPassword">Confirmar contraseña</label>
+                    </div>
+                </div>
+                <div class=" form-floating mb-3">
+                    <input type="text" class="form-control" id="address" placeholder="Ubicacion">
+                    <label for="address">Ubicacion</label>
+                </div>
+                <div class=" form-floating mb-3">
+                    <input type="date" class="form-control" id="date" placeholder="Fecha de nacimeinto">
+                    <label for="date">Fecha de Nacimiento</label>
+                </div>
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <option selected>Genero</option>
+                    <option value="male">Masculino</option>
+                    <option value="female">Femenino</option>
+                </select>
+                <button class="d-block btn-dark btn">Registrar</button>
+            </form>
+        </div>
+    </div>

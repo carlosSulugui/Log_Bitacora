@@ -1,0 +1,51 @@
+@{
+  ViewData["Title"] = "Usuarios agregado";
+  var userTale = ViewData["tabla de usuario"] as UserViewModel;
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<User></User>
+  
+<table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Primer nombre</th>
+              <th scope="col">Segundo nombret</th>
+              <th scope="col">Primer apellido</th>
+              <th scope="col">Segundo apellido</th>
+              <th scope="col">Correo</th>
+              <th scope="col">Ubicacion</th>
+              <th scope="col">Telefono</th>
+              <th scope="col">Fecha de nacimiento</th>
+              <th scope="col">Genero</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>Otto</td>
+              <td>Otto</td>
+              <td>Otto</td>
+              <td>Otto</td>
+              <td>Otto</td>
+              <td>Otto</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>simon</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td colspan="2">Larry the Bird</td>
+              <td>loque sea</td>
+            </tr>
+          </tbody>
+        </table>
+    
